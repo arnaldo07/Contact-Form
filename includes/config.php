@@ -9,11 +9,11 @@
  * **/
 
  //Define Mail constats
- defined('MAIL_HOST') ? null : define ("MAIL_HOST", "smtp.gmail.com");
- defined('MAIL_PORT') ? null : define ("MAIL_PORT", "587");
+ defined('MAIL_HOST') ? null : define ("MAIL_HOST", "");//  host port if gmail set: smtp.gmail.com
+ defined('MAIL_PORT') ? null : define ("MAIL_PORT", ""); //mail port if gmail: 587
  defined('SMTP_AUTH') ? null : define ("SMTP_AUTH", "true");
- defined('MAIL_USER') ? null : define ("MAIL_USER", "arnaldo.govene11@gmail.com");
- defined('MAIL_PASS') ? null : define ("MAIL_PASS", "Arnaldo??846861894");
+ defined('MAIL_USER') ? null : define ("MAIL_USER", ""); //user email
+ defined('MAIL_PASS') ? null : define ("MAIL_PASS", ""); //Password
 //recepient e-mail
-defined('RECIPIENT')? null : define ("RECIPIENT", "arnaldo.govene11@gmail.com");
+defined('RECIPIENT')? null : define ("RECIPIENT", ""); //RECIPIENT email
 ?>
