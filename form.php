@@ -21,13 +21,13 @@ if(isset($_POST['submit-message'])){
   $message      = $_POST['message'];
 
   //Validate post first name
-  if(!preg_match('/^[A-Za-z]/', $first_name) || empty($first_name) || strlen($first_name)>24 || strlen($first_name)<5 ){
+  if(!preg_match('/^[A-Za-z]/', $first_name) || empty($first_name) || strlen($first_name)>24 || strlen($first_name)<2 ){
     $first_name_error       = "nome";
   } else {
     $first_name_error       = "";
   }
   //Validate post surname
-  if(!preg_match('/^[A-Za-z]/', $last_name) || empty($last_name) || strlen($last_name)>24 || strlen($last_name)<5 ){
+  if(!preg_match('/^[A-Za-z]/', $last_name) || empty($last_name) || strlen($last_name)>24 || strlen($last_name)<2 ){
     $last_name_error       = "apelido";
   } else {
     $last_name_error       = "";
